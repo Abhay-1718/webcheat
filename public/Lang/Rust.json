@@ -1,0 +1,150 @@
+{
+    "variables": {
+      "description": "Used to store data with type annotations.",
+      "examples": {
+        "let": {
+          "rust": "let x: i32 = 10; // x is immutable by default"
+        },
+        "mut": {
+          "rust": "let mut y: i32 = 20; y = 30; // y is mutable"
+        }
+      }
+    },
+    "data-types": {
+      "description": "Different types of data that Rust can handle.",
+      "examples": {
+        "integer": {
+          "rust": "let age: u32 = 25; // u32 for unsigned 32-bit integer"
+        },
+        "float": {
+          "rust": "let height: f64 = 1.75; // f64 for 64-bit floating point"
+        },
+        "boolean": {
+          "rust": "let is_active: bool = true;"
+        },
+        "character": {
+          "rust": "let letter: char = 'a';"
+        },
+        "tuple": {
+          "rust": "let person: (&str, i32) = ('John', 25);"
+        },
+        "array": {
+          "rust": "let numbers: [i32; 4] = [1, 2, 3, 4]; // fixed-size array"
+        },
+        "slice": {
+          "rust": "let slice: &[i32] = &numbers[1..3]; // slice of the array"
+        }
+      }
+    },
+    "functions": {
+      "description": "Reusable blocks of code with type annotations.",
+      "examples": {
+        "functionDefinition": {
+          "rust": "fn add(a: i32, b: i32) -> i32 { a + b }"
+        },
+        "functionCall": {
+          "rust": "let result = add(5, 3);"
+        }
+      }
+    },
+    "control-flow": {
+      "description": "Directs the flow of execution in your code.",
+      "examples": {
+        "ifElse": {
+          "rust": "if x > 10 { println!(\"x is greater than 10\"); } else { println!(\"x is 10 or less\"); }"
+        },
+        "match": {
+          "rust": "match day { 1 => println!(\"Monday\"), 2 => println!(\"Tuesday\"), _ => println!(\"Other day\"), }"
+        },
+        "loop": {
+          "rust": "loop { println!(\"Looping\"); break; }"
+        },
+        "whileLoop": {
+          "rust": "let mut i = 0; while i < 5 { println!(\"{}\", i); i += 1; }"
+        },
+        "forLoop": {
+          "rust": "for i in 0..5 { println!(\"{}\", i); } // range from 0 to 4"
+        }
+      }
+    },
+    "structs": {
+      "description": "Defines custom data types.",
+      "examples": {
+        "basicStruct": {
+          "rust": "struct Person { name: String, age: u32 } let person = Person { name: String::from(\"John\"), age: 30 };"
+        }
+      }
+    },
+    "enums": {
+      "description": "Defines a type which can be one of several variants.",
+      "examples": {
+        "basicEnum": {
+          "rust": "enum Direction { Up, Down, Left, Right } let move_dir = Direction::Up;"
+        }
+      }
+    },
+    "traits": {
+      "description": "Defines functionality that can be shared across types.",
+      "examples": {
+        "basicTrait": {
+          "rust": "trait Greet { fn greet(&self) -> String; } struct Person { name: String } impl Greet for Person { fn greet(&self) -> String { format!(\"Hello, my name is {}\", self.name) } }"
+        }
+      }
+    },
+    "error-handling": {
+      "description": "Handles errors and exceptions.",
+      "examples": {
+        "result": {
+          "rust": "fn divide(a: f64, b: f64) -> Result<f64, String> { if b == 0.0 { Err(String::from(\"Cannot divide by zero\")) } else { Ok(a / b) } }"
+        },
+        "unwrap": {
+          "rust": "let result = divide(10.0, 2.0).unwrap(); // Panics if error"
+        }
+      }
+    },
+    "ownership": {
+      "description": "Manages memory safety without a garbage collector.",
+      "examples": {
+        "basicOwnership": {
+          "rust": "let s1 = String::from(\"hello\"); let s2 = s1; // Ownership of s1 is moved to s2"
+        },
+        "borrowing": {
+          "rust": "fn print_length(s: &String) { println!(\"Length: {}\", s.len()); } let s = String::from(\"hello\"); print_length(&s);"
+        }
+      }
+    },
+    "concurrency": {
+      "description": "Handles multiple threads of execution.",
+      "examples": {
+        "spawn": {
+          "rust": "use std::thread; let handle = thread::spawn(|| { println!(\"Hello from a thread\"); }); handle.join().unwrap();"
+        },
+        "mutex": {
+          "rust": "use std::sync::{Arc, Mutex}; let counter = Arc::new(Mutex::new(0)); let mut handles = vec![]; for _ in 0..10 { let counter = Arc::clone(&counter); let handle = thread::spawn(move || { let mut num = counter.lock().unwrap(); *num += 1; }); handles.push(handle); } for handle in handles { handle.join().unwrap(); }"
+        }
+      }
+    },
+    "macros": {
+      "description": "Provides a way to write code that writes code.",
+      "examples": {
+        "println": {
+          "rust": "println!(\"Hello, {}\", name); // Macro for printing to the console"
+        },
+        "vecMacro": {
+          "rust": "let v = vec![1, 2, 3]; // Macro for creating a vector"
+        }
+      }
+    },
+    "modules": {
+      "description": "Organizes code into separate files and namespaces.",
+      "examples": {
+        "mod": {
+          "rust": "mod my_module { pub fn hello() { println!(\"Hello from my_module\"); } }"
+        },
+        "use": {
+          "rust": "use my_module::hello; hello();"
+        }
+      }
+    }
+  }
+  

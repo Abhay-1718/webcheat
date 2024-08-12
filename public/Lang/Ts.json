@@ -1,0 +1,138 @@
+{
+    "variables": {
+      "description": "Used to store data with type annotations.",
+      "examples": {
+        "let": {
+          "typescript": "let x: number = 10; x = 20;"
+        },
+        "const": {
+          "typescript": "const y: number = 30; // y = 40; // This will throw an error because `const` variables cannot be reassigned."
+        }
+      }
+    },
+    "data-types": {
+      "description": "Different types of data that TypeScript can handle.",
+      "examples": {
+        "string": {
+          "typescript": "let name: string = 'John';"
+        },
+        "number": {
+          "typescript": "let age: number = 25;"
+        },
+        "boolean": {
+          "typescript": "let isActive: boolean = true;"
+        },
+        "array": {
+          "typescript": "let numbers: number[] = [1, 2, 3, 4];"
+        },
+        "tuple": {
+          "typescript": "let person: [string, number] = ['John', 25];"
+        },
+        "enum": {
+          "typescript": "enum Color { Red, Green, Blue }; let c: Color = Color.Green;"
+        },
+        "any": {
+          "typescript": "let data: any = 'string'; data = 10; // no type checking"
+        },
+        "void": {
+          "typescript": "function logMessage(message: string): void { console.log(message); }"
+        },
+        "null": {
+          "typescript": "let emptyValue: null = null;"
+        },
+        "undefined": {
+          "typescript": "let notAssigned: undefined = undefined;"
+        }
+      }
+    },
+    "functions": {
+      "description": "Reusable blocks of code with type annotations.",
+      "examples": {
+        "functionDeclaration": {
+          "typescript": "function add(a: number, b: number): number { return a + b; }"
+        },
+        "functionExpression": {
+          "typescript": "const multiply = function(a: number, b: number): number { return a * b; };"
+        },
+        "arrowFunction": {
+          "typescript": "const subtract = (a: number, b: number): number => a - b;"
+        }
+      }
+    },
+    "interfaces": {
+      "description": "Defines the shape of objects.",
+      "examples": {
+        "basicInterface": {
+          "typescript": "interface Person { name: string; age: number; } const person: Person = { name: 'John', age: 25 };"
+        }
+      }
+    },
+    "classes": {
+      "description": "Defines objects with shared properties and methods.",
+      "examples": {
+        "basicClass": {
+          "typescript": "class Person { name: string; age: number; constructor(name: string, age: number) { this.name = name; this.age = age; } greet(): string { return `Hello, my name is ${this.name}`; } } const person = new Person('John', 30); console.log(person.greet());"
+        },
+        "inheritance": {
+          "typescript": "class Employee extends Person { salary: number; constructor(name: string, age: number, salary: number) { super(name, age); this.salary = salary; } getDetails(): string { return `${super.greet()}, and I earn $${this.salary}`; } } const employee = new Employee('John', 30, 50000); console,          log(employee.getDetails());                         "
+        }
+      }
+    },
+    "generics": {
+      "description": "Provides a way to create reusable components.",
+      "examples": {
+        "basicGenerics": {
+          "typescript": "function identity<T>(arg: T): T { return arg; } let result = identity<string>('Hello');"
+        }
+      }
+    },
+    "modules": {
+      "description": "Organizes code into reusable units.",
+      "examples": {
+        "exportImport": {
+          "typescript": "export const greet = (name: string): string => `Hello, ${name}`; // In another file: import { greet } from './module';"
+        }
+      }
+    },
+    "type-assertions": {
+      "description": "Explicitly specifies the type of a value.",
+      "examples": {
+        "basicAssertion": {
+          "typescript": "let someValue: any = 'This is a string'; let strLength: number = (someValue as string).length; // or let strLength: number = (<string>someValue).length;"
+        }
+      }
+    },
+    "decorators": {
+      "description": "Annotates or modifies classes and methods.",
+      "examples": {
+        "basicDecorator": {
+          "typescript": "function Log(target: any, propertyName: string | symbol, descriptor: PropertyDescriptor) { console,    log(`${String(propertyName)} method was called`); } class MyClass { @Log myMethod() { console.log('Method executed'); } }"
+        }
+      }
+    },
+    "namespaces": {
+      "description": "Organizes code into logical units.",
+      "examples": {
+        "basicNamespace": {
+          "typescript": "namespace Utils { export function add(a: number, b: number): number { return a + b; } } const sum = Utils.add(5, 10);"
+        }
+      }
+    },
+    "async-await": {
+      "description": "Simplifies working with asynchronous code.",
+      "examples": {
+        "basicAsyncAwait": {
+          "typescript": "async function fetchData(): Promise<string> { let data = await new Promise<string>(resolve => setTimeout(() => resolve('Data loaded'), 1000)); return data; } fetchData().then(data => console.log(data));"
+        }
+      }
+    },
+    "error-handling": {
+      "description": "Handles errors in your code.",
+      "examples": {
+        "tryCatch": {
+          "typescript": "try { let result = 10 / 0; } catch (error) { console.error('An error occurred:', error); }"
+        }
+      }
+    }
+  }
+  

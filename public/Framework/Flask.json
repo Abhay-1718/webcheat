@@ -1,0 +1,106 @@
+{
+  "app": {
+    "description": "The core application object.",
+    "examples": {
+      "basicApp": {
+        "python": "Sets up the core Flask application object. This is the foundation of a Flask web application. It initializes the app and runs it if executed directly, allowing you to start a development server."
+      }
+    }
+  },
+  "routes": {
+    "description": "Maps URLs to functions.",
+    "examples": {
+      "basicRoute": {
+        "python": "Defines a route that associates a URL with a function. This is how you create endpoints in your application that return specific responses based on the URL visited."
+      },
+      "routeWithVariable": {
+        "python": "Creates a route with dynamic URL segments that capture variables from the URL. Useful for generating content based on user input or other dynamic parameters."
+      }
+    }
+  },
+  "request": {
+    "description": "Handles incoming request data.",
+    "examples": {
+      "getData": {
+        "python": "Shows how to handle form data from a POST request. This is useful for processing user input from forms or API requests where data is sent in the request body."
+      }
+    }
+  },
+  "response": {
+    "description": "Handles sending responses to the client.",
+    "examples": {
+      "basicResponse": {
+        "python": "Illustrates how to return a custom HTTP response with a status code. This is essential for sending different types of responses, including error messages or successful requests."
+      }
+    }
+  },
+  "templates": {
+    "description": "Renders HTML templates using Jinja2.",
+    "examples": {
+      "basicTemplate": {
+        "python": "Shows how to render an HTML template and pass context variables to it. This is fundamental for generating dynamic web pages based on server-side data."
+      },
+      "html": "An example of a basic HTML template that uses Jinja2 syntax to insert dynamic content into the page."
+    }
+  },
+  "static-files": {
+    "description": "Handles static files like CSS, JavaScript, and images.",
+    "examples": {
+      "basicUsage": {
+        "html": "Demonstrates how to include a static CSS file in an HTML document. Static files are used for assets like stylesheets and scripts that don’t change dynamically."
+      }
+    }
+  },
+  "forms": {
+    "description": "Handles form data using Flask-WTF.",
+    "examples": {
+      "formSetup": {
+        "python": "Explains how to set up and handle forms using Flask-WTF, including form validation and submission. This is useful for creating web forms with secure handling of user input."
+      },
+      "html": "Shows the structure of a basic HTML form for submitting data to the server. Forms are used for user input and interactions on web pages."
+    }
+  },
+  "database": {
+    "description": "Configures and interacts with databases.",
+    "examples": {
+      "basicSetup": {
+        "python": "Describes how to set up a database connection and define a model using SQLAlchemy. This is crucial for storing and retrieving data in a structured way."
+      }
+    }
+  },
+  "blueprints": {
+    "description": "Organizes your application into modules.",
+    "examples": {
+      "basicBlueprint": {
+        "python": "Explains how to create and use blueprints to modularize your Flask application. Blueprints help organize routes and handlers in a large application."
+      },
+      "registerBlueprint": {
+        "python": "Describes how to register a blueprint with the main application. This is necessary for integrating modular components into the main app."
+      }
+    }
+  },
+  "sessions": {
+    "description": "Handles user sessions and cookies.",
+    "examples": {
+      "basicSession": {
+        "python": "Shows how to set and retrieve session variables using Flask's session management. Sessions are used to store user-specific data across requests."
+      }
+    }
+  },
+  "errors": {
+    "description": "Handles error responses and custom error pages.",
+    "examples": {
+      "basicErrorHandling": {
+        "python": "Demonstrates how to create custom error pages for different HTTP error codes, like 404 Not Found. This is useful for providing a better user experience during errors."
+      }
+    }
+  },
+  "logging": {
+    "description": "Logs application events and errors.",
+    "examples": {
+      "basicLogging": {
+        "python": "Shows how to set up basic logging for your Flask application. Logging is important for monitoring application behavior and troubleshooting issues."
+      }
+    }
+  }
+}

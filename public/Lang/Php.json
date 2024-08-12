@@ -1,0 +1,145 @@
+{
+    "variables": {
+      "description": "Used to store data.",
+      "examples": {
+        "basicVariable": {
+          "php": "$x = 10;"
+        },
+        "string": {
+          "php": "$name = 'John';"
+        },
+        "float": {
+          "php": "$pi = 3.14;"
+        },
+        "boolean": {
+          "php": "$isActive = true;"
+        }
+      }
+    },
+    "data-types": {
+      "description": "Different types of data that PHP can handle.",
+      "examples": {
+        "integer": {
+          "php": "$age = 25;"
+        },
+        "float": {
+          "php": "$height = 1.75;"
+        },
+        "string": {
+          "php": "$greeting = 'Hello';"
+        },
+        "array": {
+          "php": "$numbers = [1, 2, 3, 4];"
+        },
+        "associativeArray": {
+          "php": "$person = ['name' => 'John', 'age' => 25];"
+        },
+        "object": {
+          "php": "$person = new stdClass(); $person->name = 'John'; $person->age = 25;"
+        }
+      }
+    },
+    "functions": {
+      "description": "Reusable blocks of code.",
+      "examples": {
+        "functionDefinition": {
+          "php": "function add($a, $b) {\n    return $a + $b;\n}"
+        },
+        "functionCall": {
+          "php": "$result = add(5, 3);"
+        },
+        "anonymousFunction": {
+          "php": "$multiply = function($a, $b) {\n    return $a * $b;\n};\n$result = $multiply(4, 5);"
+        }
+      }
+    },
+    "control-flow": {
+      "description": "Directs the flow of execution in your code.",
+      "examples": {
+        "ifElse": {
+          "php": "if ($x > 10) {\n    echo 'x is greater than 10';\n} else {\n    echo 'x is 10 or less';\n}"
+        },
+        "switch": {
+          "php": "switch ($day) {\n    case 1:\n        echo 'Monday';\n        break;\n    case 2:\n        echo 'Tuesday';\n        break;\n    default:\n        echo 'Other day';\n}"
+        },
+        "forLoop": {
+          "php": "for ($i = 0; $i < 5; $i++) {\n    echo $i;\n}"
+        },
+        "whileLoop": {
+          "php": "$i = 0;\nwhile ($i < 5) {\n    echo $i;\n    $i++;\n}"
+        }
+      }
+    },
+    "classes": {
+      "description": "Defines objects with shared properties and methods.",
+      "examples": {
+        "basicClass": {
+          "php": "class Person {\n    public $name;\n    public $age;\n\n    public function __construct($name, $age) {\n        $this->name = $name;\n        $this->age = $age;\n    }\n\n    public function greet() {\n        return \"Hello, my name is \" . $this->name;\n    }\n}\n\n$person = new Person('John', 30);\necho $person->greet();"
+        },
+        "inheritance": {
+          "php": "class Employee extends Person {\n    public $salary;\n\n    public function __construct($name, $age, $salary) {\n        parent::__construct($name, $age);\n        $this->salary = $salary;\n    }\n\n    public function getDetails() {\n        return parent::greet() . \", and I earn $\" . $this->salary;\n    }\n}\n\n$employee = new Employee('John', 30, 50000);\necho $employee->getDetails();"
+        }
+      }
+    },
+    "namespaces": {
+      "description": "Organizes code into separate logical groups.",
+      "examples": {
+        "namespaceDefinition": {
+          "php": "namespace MyNamespace;\n\nclass MyClass {\n    public function greet() {\n        return 'Hello from MyNamespace';\n    }\n}\n\n$obj = new MyClass();\necho $obj->greet();"
+        },
+        "useNamespace": {
+          "php": "use MyNamespace\\MyClass;\n\n$obj = new MyClass();\necho $obj->greet();"
+        }
+      }
+    },
+    "error-handling": {
+      "description": "Handles errors and exceptions.",
+      "examples": {
+        "tryCatch": {
+          "php": "try {\n    $result = 10 / 0;\n} catch (Exception $e) {\n    echo 'Caught exception: ',  $e->getMessage();\n}"
+        }
+      }
+    },
+    "file-io": {
+      "description": "Handles reading and writing files.",
+      "examples": {
+        "readingFile": {
+          "php": "$content = file_get_contents('file.txt');\necho $content;"
+        },
+        "writingFile": {
+          "php": "file_put_contents('file.txt', 'Hello, World!');"
+        }
+      }
+    },
+    "sessions": {
+      "description": "Manages user sessions.",
+      "examples": {
+        "startSession": {
+          "php": "session_start();\n$_SESSION['username'] = 'John';"
+        },
+        "accessSession": {
+          "php": "session_start();\necho $_SESSION['username'];"
+        }
+      }
+    },
+    "cookies": {
+      "description": "Handles cookies.",
+      "examples": {
+        "setCookie": {
+          "php": "setcookie('user', 'John', time() + 3600); // expires in 1 hour"
+        },
+        "getCookie": {
+          "php": "if (isset($_COOKIE['user'])) {\n    echo $_COOKIE['user'];\n}"
+        }
+      }
+    },
+    "regular-expressions": {
+      "description": "Performs pattern matching.",
+      "examples": {
+        "basicRegex": {
+          "php": "$pattern = '/\\d+/';\n$subject = 'The year is 2024';\nif (preg_match($pattern, $subject, $matches)) {\n    print_r($matches);\n}"
+        }
+      }
+    }
+  }
+  

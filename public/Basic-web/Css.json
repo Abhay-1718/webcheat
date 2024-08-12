@@ -1,0 +1,119 @@
+{
+    "color": {
+      "description": "Sets the color of text.",
+      "values": ["color name", "#hex", "rgb(r, g, b)", "rgba(r, g, b, a)", "hsl(h, s%, l%)", "hsla(h, s%, l%, a)"]
+    },
+    "background-color": {
+      "description": "Sets the background color of an element.",
+      "values": ["color name", "#hex", "rgb(r, g, b)", "rgba(r, g, b, a)"]
+    },
+    "font-size": {
+      "description": "Sets the size of the font.",
+      "values": ["px", "em", "rem", "%", "vw", "vh"]
+    },
+    "font-family": {
+      "description": "Specifies the font of text.",
+      "values": ["font name", "generic family (serif, sans-serif, monospace, cursive, fantasy)"]
+    },
+    "font-weight": {
+      "description": "Sets the weight (thickness) of the font.",
+      "values": ["normal", "bold", "bolder", "lighter", "100", "200", "300", "400", "500", "600", "700", "800", "900"]
+    },
+    "text-align": {
+      "description": "Sets the horizontal alignment of text.",
+      "values": ["left", "right", "center", "justify"]
+    },
+    "line-height": {
+      "description": "Sets the distance between lines of text.",
+      "values": ["normal", "number", "length", "percentage"]
+    },
+    "margin": {
+      "description": "Sets the outer space around an element.",
+      "values": ["length", "percentage", "auto"]
+    },
+    "padding": {
+      "description": "Sets the inner space between the element's border and content.",
+      "values": ["length", "percentage"]
+    },
+    "border": {
+      "description": "Sets the border around an element.",
+      "values": ["border-width", "border-style", "border-color"]
+    },
+    "border-width": {
+      "description": "Sets the width of the border.",
+      "values": ["thin", "medium", "thick", "length"]
+    },
+    "border-style": {
+      "description": "Sets the style of the border.",
+      "values": ["none", "solid", "dotted", "dashed", "double", "groove", "ridge", "inset", "outset"]
+    },
+    "border-color": {
+      "description": "Sets the color of the border.",
+      "values": ["color name", "#hex", "rgb(r, g, b)", "rgba(r, g, b, a)"]
+    },
+    "width": {
+      "description": "Sets the width of an element.",
+      "values": ["length", "percentage"]
+    },
+    "height": {
+      "description": "Sets the height of an element.",
+      "values": ["length", "percentage"]
+    },
+    "display": {
+      "description": "Sets the display behavior of an element.",
+      "values": ["block", "inline", "inline-block", "flex", "grid", "none"]
+    },
+    "position": {
+      "description": "Sets the type of positioning method used for an element.",
+      "values": ["static", "relative", "absolute", "fixed", "sticky"]
+    },
+    "top": {
+      "description": "Sets the top position of a positioned element.",
+      "values": ["length", "percentage", "auto"]
+    },
+    "right": {
+      "description": "Sets the right position of a positioned element.",
+      "values": ["length", "percentage", "auto"]
+    },
+    "bottom": {
+      "description": "Sets the bottom position of a positioned element.",
+      "values": ["length", "percentage", "auto"]
+    },
+    "left": {
+      "description": "Sets the left position of a positioned element.",
+      "values": ["length", "percentage", "auto"]
+    },
+    "overflow": {
+      "description": "Sets what to do when content overflows an element's box.",
+      "values": ["visible", "hidden", "scroll", "auto"]
+    },
+    "z-index": {
+      "description": "Sets the stack order of a positioned element.",
+      "values": ["auto", "number"]
+    },
+    "opacity": {
+      "description": "Sets the transparency level of an element.",
+      "values": ["number (0.0 to 1.0)"]
+    },
+    "box-shadow": {
+      "description": "Adds shadow effects around an element's frame.",
+      "values": ["offset-x", "offset-y", "blur-radius", "spread-radius", "color"]
+    },
+    "text-shadow": {
+      "description": "Adds shadow effects to text.",
+      "values": ["offset-x", "offset-y", "blur-radius", "color"]
+    },
+    "transform": {
+      "description": "Applies 2D or 3D transformation to an element.",
+      "values": ["rotate(deg)", "scale(x, y)", "translate(x, y)", "skew(x, y)"]
+    },
+    "transition": {
+      "description": "Specifies the transition effects for properties.",
+      "values": ["property", "duration", "timing-function", "delay"]
+    },
+    "animation": {
+      "description": "Specifies animations for elements.",
+      "values": ["name", "duration", "timing-function", "delay", "iteration-count", "direction", "fill-mode", "play-state"]
+    }
+  }
+  

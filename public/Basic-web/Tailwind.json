@@ -1,0 +1,103 @@
+{
+    "text-color": {
+      "description": "Sets the color of text.",
+      "values": ["text-{color}", "text-{color}-500", "text-{color}-dark"]
+    },
+    "background-color": {
+      "description": "Sets the background color of an element.",
+      "values": ["bg-{color}", "bg-{color}-500", "bg-{color}-dark"]
+    },
+    "border-color": {
+      "description": "Sets the color of the border.",
+      "values": ["border-{color}", "border-{color}-500", "border-{color}-dark"]
+    },
+    "padding": {
+      "description": "Sets the padding inside an element.",
+      "values": ["p-{size}", "pt-{size}", "pr-{size}", "pb-{size}", "pl-{size}"]
+    },
+    "margin": {
+      "description": "Sets the margin outside an element.",
+      "values": ["m-{size}", "mt-{size}", "mr-{size}", "mb-{size}", "ml-{size}"]
+    },
+    "width": {
+      "description": "Sets the width of an element.",
+      "values": ["w-{size}", "w-{fraction}", "w-{percentage}"]
+    },
+    "height": {
+      "description": "Sets the height of an element.",
+      "values": ["h-{size}", "h-{fraction}", "h-{percentage}"]
+    },
+    "font-size": {
+      "description": "Sets the size of the font.",
+      "values": ["text-xs", "text-sm", "text-base", "text-lg", "text-xl", "text-2xl", "text-3xl", "text-4xl", "text-5xl", "text-6xl"]
+    },
+    "font-weight": {
+      "description": "Sets the weight (thickness) of the font.",
+      "values": ["font-thin", "font-extralight", "font-light", "font-normal", "font-medium", "font-semibold", "font-bold", "font-extrabold", "font-black"]
+    },
+    "text-align": {
+      "description": "Sets the horizontal alignment of text.",
+      "values": ["text-left", "text-center", "text-right", "text-justify"]
+    },
+    "flex": {
+      "description": "Sets flexbox properties.",
+      "values": ["flex-1", "flex-auto", "flex-initial", "flex-none"]
+    },
+    "flex-direction": {
+      "description": "Sets the direction of flex items.",
+      "values": ["flex-row", "flex-row-reverse", "flex-col", "flex-col-reverse"]
+    },
+    "justify-content": {
+      "description": "Aligns flex items along the main axis.",
+      "values": ["justify-start", "justify-center", "justify-end", "justify-between", "justify-around", "justify-evenly"]
+    },
+    "align-items": {
+      "description": "Aligns flex items along the cross axis.",
+      "values": ["items-start", "items-center", "items-end", "items-baseline", "items-stretch"]
+    },
+    "grid-template-columns": {
+      "description": "Sets the number and size of columns in a grid layout.",
+      "values": ["grid-cols-1", "grid-cols-2", "grid-cols-3", "grid-cols-4", "grid-cols-5", "grid-cols-6", "grid-cols-7", "grid-cols-8", "grid-cols-9", "grid-cols-10"]
+    },
+    "gap": {
+      "description": "Sets the gap between grid or flex items.",
+      "values": ["gap-{size}", "gap-x-{size}", "gap-y-{size}"]
+    },
+    "border-radius": {
+      "description": "Sets the rounding of corners.",
+      "values": ["rounded-sm", "rounded", "rounded-md", "rounded-lg", "rounded-xl", "rounded-2xl", "rounded-3xl", "rounded-full"]
+    },
+    "shadow": {
+      "description": "Sets the box-shadow of an element.",
+      "values": ["shadow-sm", "shadow", "shadow-md", "shadow-lg", "shadow-xl", "shadow-2xl", "shadow-inner", "shadow-outline"]
+    },
+    "opacity": {
+      "description": "Sets the transparency level of an element.",
+      "values": ["opacity-0", "opacity-25", "opacity-50", "opacity-75", "opacity-100"]
+    },
+    "cursor": {
+      "description": "Sets the type of cursor.",
+      "values": ["cursor-auto", "cursor-default", "cursor-pointer", "cursor-wait", "cursor-text", "cursor-move", "cursor-not-allowed"]
+    },
+    "position": {
+      "description": "Sets the positioning of an element.",
+      "values": ["static", "relative", "absolute", "fixed", "sticky"]
+    },
+    "top": {
+      "description": "Sets the top position of a positioned element.",
+      "values": ["top-{size}", "top-0", "top-1/2", "top-full"]
+    },
+    "right": {
+      "description": "Sets the right position of a positioned element.",
+      "values": ["right-{size}", "right-0", "right-1/2", "right-full"]
+    },
+    "bottom": {
+      "description": "Sets the bottom position of a positioned element.",
+      "values": ["bottom-{size}", "bottom-0", "bottom-1/2", "bottom-full"]
+    },
+    "left": {
+      "description": "Sets the left position of a positioned element.",
+      "values": ["left-{size}", "left-0", "left-1/2", "left-full"]
+    }
+  }
+  

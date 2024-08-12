@@ -1,0 +1,142 @@
+{
+    "variables": {
+      "description": "Used to store data.",
+      "examples": {
+        "basicVariable": {
+          "go": "var x int = 10"
+        },
+        "shortDeclaration": {
+          "go": "y := 20 // Short variable declaration"
+        },
+        "string": {
+          "go": "name := \"John\""
+        },
+        "float": {
+          "go": "pi := 3.14"
+        },
+        "boolean": {
+          "go": "isActive := true"
+        }
+      }
+    },
+    "data-types": {
+      "description": "Different types of data that Go can handle.",
+      "examples": {
+        "integer": {
+          "go": "age := 25"
+        },
+        "float": {
+          "go": "height := 1.75"
+        },
+        "string": {
+          "go": "greeting := \"Hello\""
+        },
+        "array": {
+          "go": "numbers := [4]int{1, 2, 3, 4}"
+        },
+        "slice": {
+          "go": "numbers := []int{1, 2, 3, 4}"
+        },
+        "map": {
+          "go": "person := map[string]int{\"age\": 25}"
+        },
+        "struct": {
+          "go": "type Person struct {\n    Name string\n    Age int\n}\n\nperson := Person{Name: \"John\", Age: 30}"
+        }
+      }
+    },
+    "functions": {
+      "description": "Reusable blocks of code.",
+      "examples": {
+        "functionDefinition": {
+          "go": "func add(a int, b int) int {\n    return a + b\n}"
+        },
+        "functionCall": {
+          "go": "result := add(5, 3)"
+        },
+        "namedReturnValues": {
+          "go": "func multiply(a int, b int) (result int) {\n    result = a * b\n    return\n}"
+        },
+        "variadicFunction": {
+          "go": "func sum(nums ...int) int {\n    total := 0\n    for _, num := range nums {\n        total += num\n    }\n    return total\n}"
+        }
+      }
+    },
+    "control-flow": {
+      "description": "Directs the flow of execution in your code.",
+      "examples": {
+        "ifElse": {
+          "go": "if x > 10 {\n    fmt.Println(\"x is greater than 10\")\n} else {\n    fmt.Println(\"x is 10 or less\")\n}"
+        },
+        "switch": {
+          "go": "switch day {\n    case 1:\n        fmt.Println(\"Monday\")\n    case 2:\n        fmt.Println(\"Tuesday\")\n    default:\n        fmt.Println(\"Other day\")\n}"
+        },
+        "forLoop": {
+          "go": "for i := 0; i < 5; i++ {\n    fmt.Println(i)\n}"
+        },
+        "rangeLoop": {
+          "go": "numbers := []int{1, 2, 3, 4}\nfor index, value := range numbers {\n    fmt.Printf(\"Index: %d, Value: %d\\n\", index, value)\n}"
+        }
+      }
+    },
+    "structs": {
+      "description": "Defines custom data types.",
+      "examples": {
+        "basicStruct": {
+          "go": "type Person struct {\n    Name string\n    Age int\n}\n\nperson := Person{Name: \"John\", Age: 30}"
+        },
+        "methodOnStruct": {
+          "go": "func (p Person) Greet() string {\n    return \"Hello, my name is \" + p.Name\n}\n\nperson := Person{Name: \"John\", Age: 30}\nfmt.Println(person.Greet())"
+        }
+      }
+    },
+    "interfaces": {
+      "description": "Defines a contract for types.",
+      "examples": {
+        "basicInterface": {
+          "go": "type Greeter interface {\n    Greet() string\n}\n\ntype Person struct {\n    Name string\n}\n\nfunc (p Person) Greet() string {\n    return \"Hello, my name is \" + p.Name\n}\n\nvar g Greeter = Person{Name: \"John\"}\nfmt.Println(g.Greet())"
+        }
+      }
+    },
+    "error-handling": {
+      "description": "Handles errors and exceptions.",
+      "examples": {
+        "basicErrorHandling": {
+          "go": "func divide(a, b int) (int, error) {\n    if b == 0 {\n        return 0, fmt.Errorf(\"Cannot divide by zero\")\n    }\n    return a / b, nil\n}\n\nresult, err := divide(10, 2)\nif err != nil {\n    fmt.Println(err)\n} else {\n    fmt.Println(result)\n}"
+        }
+      }
+    },
+    "concurrency": {
+      "description": "Handles multiple threads of execution.",
+      "examples": {
+        "goroutines": {
+          "go": "go func() {\n    fmt.Println(\"Hello from a goroutine\")\n}()\n\n// Ensure the main function waits for the goroutine to finish\nvar input string\nfmt.Scanln(&input)"
+        },
+        "channels": {
+          "go": "messages := make(chan string)\n\ngo func() {\n    messages <- \"Hello, World!\"\n}()\n\nmsg := <-messages\nfmt.Println(msg)"
+        }
+      }
+    },
+    "packages": {
+      "description": "Organizes code into modules.",
+      "examples": {
+        "importPackage": {
+          "go": "import \"fmt\"\n\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}"
+        },
+        "creatingPackage": {
+          "go": "package mypackage\n\nfunc Greet(name string) string {\n return \"Hello, \" + name\n}\n\n// Usage: import \"path/to/mypackage\"; fmt.Println(Greet(\"John\"))"
+
+
+        }
+      }
+    },
+    "defer": {
+      "description": "Schedules a function to be run after the function completes.",
+      "examples": {
+        "basicDefer": {
+          "go": "func main() {\n    defer fmt.Println(\"Deferred\")\n    fmt.Println(\"Immediate\")\n}"
+        }
+      }
+    }
+  }
+  

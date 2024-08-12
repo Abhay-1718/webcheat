@@ -1,0 +1,157 @@
+{
+    "variables": {
+      "description": "Used to store data.",
+      "examples": {
+        "basicVariable": {
+          "kotlin": "var x: Int = 10"
+        },
+        "immutableVariable": {
+          "kotlin": "val y: Int = 20 // Immutable (read-only)"
+        },
+        "string": {
+          "kotlin": "val name: String = \"John\""
+        },
+        "float": {
+          "kotlin": "val pi: Float = 3.14f"
+        },
+        "boolean": {
+          "kotlin": "val isActive: Boolean = true"
+        }
+      }
+    },
+    "data-types": {
+      "description": "Different types of data that Kotlin can handle.",
+      "examples": {
+        "integer": {
+          "kotlin": "val age: Int = 25"
+        },
+        "float": {
+          "kotlin": "val height: Float = 1.75f"
+        },
+        "string": {
+          "kotlin": "val greeting: String = \"Hello\""
+        },
+        "array": {
+          "kotlin": "val numbers: Array<Int> = arrayOf(1, 2, 3, 4)"
+        },
+        "list": {
+          "kotlin": "val numbers: List<Int> = listOf(1, 2, 3, 4)"
+        },
+        "map": {
+          "kotlin": "val person: Map<String, Int> = mapOf(\"age\" to 25)"
+        },
+        "dataClass": {
+          "kotlin": "data class Person(val name: String, val age: Int)\n\nval person = Person(\"John\", 30)"
+        }
+      }
+    },
+    "functions": {
+      "description": "Reusable blocks of code.",
+      "examples": {
+        "functionDefinition": {
+          "kotlin": "fun add(a: Int, b: Int): Int {\n    return a + b\n}"
+        },
+        "functionCall": {
+          "kotlin": "val result = add(5, 3)"
+        },
+        "singleExpressionFunction": {
+          "kotlin": "fun multiply(a: Int, b: Int): Int = a * b"
+        },
+        "lambdaExpression": {
+          "kotlin": "val square: (Int) -> Int = { x -> x * x }\nval result = square(4)"
+        }
+      }
+    },
+    "control-flow": {
+      "description": "Directs the flow of execution in your code.",
+      "examples": {
+        "ifElse": {
+          "kotlin": "if (x > 10) {\n    println(\"x is greater than 10\")\n} else {\n    println(\"x is 10 or less\")\n}"
+        },
+        "when": {
+          "kotlin": "when (day) {\n    1 -> println(\"Monday\")\n    2 -> println(\"Tuesday\")\n    else -> println(\"Other day\")\n}"
+        },
+        "forLoop": {
+          "kotlin": "for (i in 0..4) {\n    println(i)\n}"
+        },
+        "whileLoop": {
+          "kotlin": "var i = 0\nwhile (i < 5) {\n    println(i)\n    i++\n}"
+        }
+      }
+    },
+    "classes": {
+      "description": "Defines objects with shared properties and methods.",
+      "examples": {
+        "basicClass": {
+          "kotlin": "class Person(val name: String, var age: Int) {\n    fun greet(): String {\n        return \"Hello, my name is $name\"\n    }\n}\n\nval person = Person(\"John\", 30)\nprintln(person.greet())"
+        },
+        "inheritance": {
+          "kotlin": "open class Animal(val name: String)\nclass Dog(name: String, val breed: String) : Animal(name)\n\nval dog = Dog(\"Rex\", \"Labrador\")\nprintln(dog.name)\nprintln(dog.breed)"
+        }
+      }
+    },
+    "interfaces": {
+      "description": "Defines a contract for classes.",
+      "examples": {
+        "basicInterface": {
+          "kotlin": "interface Greeter {\n    fun greet(): String\n}\n\nclass Person(val name: String) : Greeter {\n    override fun greet(): String {\n        return \"Hello, my name is $name\"\n    }\n}\n\nval greeter: Greeter = Person(\"John\")\nprintln(greeter.greet())"
+        }
+      }
+    },
+    "collections": {
+      "description": "Handles groups of objects.",
+      "examples": {
+        "list": {
+          "kotlin": "val numbers = listOf(1, 2, 3, 4)\nprintln(numbers[0])"
+        },
+        "mutableList": {
+          "kotlin": "val numbers = mutableListOf(1, 2, 3)\nnumbers.add(4)\nprintln(numbers)"
+        },
+        "map": {
+          "kotlin": "val person = mapOf(\"name\" to \"John\", \"age\" to 30)\nprintln(person[\"name\"])"
+        },
+        "mutableMap": {
+          "kotlin": "val person = mutableMapOf(\"name\" to \"John\", \"age\" to 30)\nperson[\"age\"] = 31\nprintln(person)"
+        }
+      }
+    },
+    "null-safety": {
+      "description": "Ensures that your code handles null values safely.",
+      "examples": {
+        "nullableTypes": {
+          "kotlin": "var name: String? = null\nname?.let { println(it) }"
+        },
+        "safeCallOperator": {
+          "kotlin": "val length: Int? = name?.length"
+        },
+        "elvisOperator": {
+          "kotlin": "val length = name?.length ?: 0"
+        }
+      }
+    },
+    "extension-functions": {
+      "description": "Adds new functions to existing classes.",
+      "examples": {
+        "basicExtension": {
+          "kotlin": "fun String.lastChar(): Char = this[this.length - 1]\n\nval lastChar = \"Kotlin\".lastChar()\nprintln(lastChar)"
+        }
+      }
+    },
+    "data-classes": {
+      "description": "Simplifies the creation of classes for storing data.",
+      "examples": {
+        "basicDataClass": {
+          "kotlin": "data class Person(val name: String, val age: Int)\n\nval person = Person(\"John\", 30)\nprintln(person)"
+        }
+      }
+    },
+    "higher-order-functions": {
+      "description": "Functions that take other functions as parameters or return them.",
+      "examples": {
+        "basicHigherOrderFunction": {
+          "kotlin": "fun operate(a: Int, b: Int, operation: (Int, Int) -> Int): Int {\n    return operation(a, b)\n}\n\nval sum = operate(5, 3) { x, y -> x + y }\nprintln(sum)"
+        }
+      }
+    }
+  }
+  

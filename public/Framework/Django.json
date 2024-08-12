@@ -1,0 +1,116 @@
+{
+  "models": {
+    "description": "Defines the structure of your database tables.",
+    "examples": {
+      "basicModel": {
+        "python": "Describes how to create a model in Django that represents a database table. The model includes fields and their data types, such as character fields for text and integer fields for numbers."
+      }
+    }
+  },
+  "views": {
+    "description": "Handles the logic for processing requests and returning responses.",
+    "examples": {
+      "functionBasedView": {
+        "python": "Shows how to define a view function in Django that processes incoming requests and returns a response, such as a simple text message."
+      },
+      "classBasedView": {
+        "python": "Demonstrates how to use class-based views in Django to handle requests. This approach allows for more structured and reusable view logic."
+      }
+    }
+  },
+  "urls": {
+    "description": "Maps URLs to views.",
+    "examples": {
+      "basicUrls": {
+        "python": "Explains how to configure URL routing in Django to connect specific URLs with view functions. This is essential for defining the endpoints of your web application."
+      }
+    }
+  },
+  "templates": {
+    "description": "Defines the HTML structure of your web pages.",
+    "examples": {
+      "basicTemplate": {
+        "html": "Shows an example of a basic HTML template in Django, which includes dynamic content insertion using template variables."
+      }
+    }
+  },
+  "forms": {
+    "description": "Handles user input and validation.",
+    "examples": {
+      "basicForm": {
+        "python": "Illustrates how to create a form in Django using the forms framework, including defining fields and their validation rules."
+      },
+      "formHandling": {
+        "python": "Describes how to handle form submissions, including validating user input and processing it based on whether the form is valid or not."
+      }
+    }
+  },
+  "admin": {
+    "description": "Provides a built-in admin interface for managing models.",
+    "examples": {
+      "registerModel": {
+        "python": "Shows how to register a Django model with the admin interface, allowing it to be managed through the Django admin panel."
+      }
+    }
+  },
+  "authentication": {
+    "description": "Handles user authentication and authorization.",
+    "examples": {
+      "userCreation": {
+        "python": "Describes how to create a new user in Django with a username and password. This is essential for setting up user accounts in your application."
+      },
+      "loginView": {
+        "python": "Explains how to authenticate a user and handle the login process, including checking credentials and starting a user session."
+      }
+    }
+  },
+  "middleware": {
+    "description": "Processes requests and responses globally.",
+    "examples": {
+      "basicMiddleware": {
+        "python": "Shows how to create custom middleware in Django to process requests and responses. Middleware can be used for tasks such as modifying requests or handling errors."
+      }
+    }
+  },
+  "signals": {
+    "description": "Allows certain senders to notify a set of receivers when certain actions have taken place.",
+    "examples": {
+      "basicSignal": {
+        "python": "Describes how to use Django signals to execute code in response to specific events, such as saving a model instance."
+      }
+    }
+  },
+  "static-files": {
+    "description": "Handles static files like CSS, JavaScript, and images.",
+    "examples": {
+      "settings": {
+        "python": "Explains how to configure static file settings in Django, including defining the URL and directories where static files are stored."
+      },
+      "templateUsage": {
+        "html": "Shows how to include static files, such as CSS stylesheets, in your HTML templates using Django's static file handling features."
+      }
+    }
+  },
+  "media-files": {
+    "description": "Handles user-uploaded files.",
+    "examples": {
+      "settings": {
+        "python": "Describes how to configure media file settings in Django, including the URL and directory for storing user-uploaded files."
+      },
+      "urls": {
+        "python": "Explains how to include media files in your URL patterns to serve user-uploaded content through the Django application."
+      }
+    }
+  },
+  "deployment": {
+    "description": "Prepares your Django application for production.",
+    "examples": {
+      "settingsProduction": {
+        "python": "Describes how to adjust Django settings for a production environment, including disabling debug mode and configuring allowed hosts."
+      },
+      "databaseConfig": {
+        "python": "Shows how to configure the database settings for a production environment, including specifying the database engine and connection details."
+      }
+    }
+  }
+}

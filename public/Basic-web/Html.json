@@ -1,0 +1,97 @@
+{
+    "html": {
+      "description": "The root element of an HTML document."
+    },
+    "head": {
+      "description": "Contains metadata and links to external resources."
+    },
+    "title": {
+      "description": "Sets the title of the document (shown in the browser tab)."
+    },
+    "meta": {
+      "attributes": {
+        "charset": "Character encoding.",
+        "name": "Metadata name (e.g., 'description').",
+        "content": "Metadata value."
+      }
+    },
+    "link": {
+      "attributes": {
+        "rel": "Relationship between the current document and the linked resource.",
+        "href": "URL of the linked resource."
+      }
+    },
+    "style": {
+      "description": "Contains CSS styles for the document."
+    },
+    "body": {
+      "description": "Contains the content of the document."
+    },
+    "h1-h6": {
+      "description": "Defines headings from largest (h1) to smallest (h6)."
+    },
+    "p": {
+      "description": "Defines a paragraph."
+    },
+    "a": {
+      "attributes": {
+        "href": "URL of the page the link goes to.",
+        "target": "Specifies where to open the linked document."
+      }
+    },
+    "img": {
+      "attributes": {
+        "src": "URL of the image.",
+        "alt": "Alternative text for the image.",
+        "width": "Width of the image.",
+        "height": "Height of the image."
+      }
+    },
+    "div": {
+      "description": "Defines a division or section in the document."
+    },
+    "span": {
+      "description": "Defines a section within text."
+    },
+    "ul": {
+      "description": "Defines an unordered list."
+    },
+    "ol": {
+      "description": "Defines an ordered list."
+    },
+    "li": {
+      "description": "Defines a list item."
+    },
+    "table": {
+      "description": "Defines a table."
+    },
+    "tr": {
+      "description": "Defines a row in a table."
+    },
+    "td": {
+      "description": "Defines a cell in a table."
+    },
+    "th": {
+      "description": "Defines a header cell in a table."
+    },
+    "form": {
+      "attributes": {
+        "action": "URL where the form data will be sent.",
+        "method": "HTTP method (e.g., 'get' or 'post')."
+      }
+    },
+    "input": {
+      "attributes": {
+        "type": "Type of input (e.g., 'text', 'password').",
+        "name": "Name of the input field.",
+        "value": "Value of the input field."
+      }
+    },
+    "button": {
+      "attributes": {
+        "type": "Type of button (e.g., 'button', 'submit').",
+        "onclick": "JavaScript function to run when clicked."
+      }
+    }
+  }
+  

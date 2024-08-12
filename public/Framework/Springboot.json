@@ -1,0 +1,106 @@
+{
+  "application": {
+    "description": "Entry point for a Spring Boot app.",
+    "examples": {
+      "basicApplication": {
+        "java": "Sets up and runs a Spring Boot application. Essential for starting the application."
+      }
+    }
+  },
+  "controllers": {
+    "description": "Handles HTTP requests.",
+    "examples": {
+      "basicController": {
+        "java": "Defines endpoints to handle client requests and return responses."
+      }
+    }
+  },
+  "services": {
+    "description": "Contains business logic, used in controllers.",
+    "examples": {
+      "basicService": {
+        "java": "Encapsulates business logic that is used by controllers."
+      }
+    }
+  },
+  "repositories": {
+    "description": "Handles database operations.",
+    "examples": {
+      "basicRepository": {
+        "java": "Interfaces for data access, typically extending JpaRepository for CRUD operations."
+      }
+    }
+  },
+  "entities": {
+    "description": "Defines database table structure.",
+    "examples": {
+      "basicEntity": {
+        "java": "Defines the data model and database table schema using JPA annotations."
+      }
+    }
+  },
+  "configuration": {
+    "description": "Configures beans and settings.",
+    "examples": {
+      "basicConfiguration": {
+        "java": "Configures Spring beans and application settings using @Configuration."
+      }
+    }
+  },
+  "properties": {
+    "description": "Application properties configuration.",
+    "examples": {
+      "applicationProperties": {
+        "properties": "Contains key-value pairs for configuring various application settings like server port and datasource URL."
+      }
+    }
+  },
+  "profiles": {
+    "description": "Manages environment-specific settings.",
+    "examples": {
+      "applicationProfile": {
+        "properties": "Specifies different profiles for different environments, such as development or production."
+      }
+    }
+  },
+  "security": {
+    "description": "Configures authentication and authorization.",
+    "examples": {
+      "basicSecurityConfig": {
+        "java": "Sets up security configurations, including user authentication and authorization rules."
+      }
+    }
+  },
+  "rest": {
+    "description": "Manages RESTful web services.",
+    "examples": {
+      "basicRestController": {
+        "java": "Defines REST endpoints to expose resources and handle RESTful requests."
+      }
+    }
+  },
+  "exception-handling": {
+    "description": "Global exception handling.",
+    "examples": {
+      "basicExceptionHandler": {
+        "java": "Provides a centralized way to handle exceptions across the application."
+      }
+    }
+  },
+  "testing": {
+    "description": "Tests for Spring Boot applications.",
+    "examples": {
+      "basicTest": {
+        "java": "Unit and integration tests for verifying application functionality."
+      }
+    }
+  },
+  "actuator": {
+    "description": "Features for production-ready apps.",
+    "examples": {
+      "basicActuatorSetup": {
+        "properties": "Enables management and monitoring features like health checks and application info."
+      }
+    }
+  }
+}

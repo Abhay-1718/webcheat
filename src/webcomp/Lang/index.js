@@ -1,0 +1,8 @@
+export{default as Java}  from  '../Lang/Java'
+export{default as Js}  from '../Lang/Js'
+export{default as Ts}  from '../Lang/Ts'
+export{default as Python}  from  '../Lang/Python'
+export{default as Go}  from '../Lang/Go'
+export{default as Php}  from '../Lang/Php'
+export{default as Kotlin}  from '../Lang/Kotlin'
+export{default as Rust}  from '../Lang/Rust'

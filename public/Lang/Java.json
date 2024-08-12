@@ -1,0 +1,145 @@
+{
+  "variables": {
+    "description": "Used to store data.",
+    "examples": {
+      "integer": {
+        "java": "Represents whole numbers, e.g., `int x = 10;`"
+      },
+      "double": {
+        "java": "Represents numbers with decimals, e.g., `double y = 20.5;`"
+      },
+      "string": {
+        "java": "Represents text, e.g., `String name = \"John\";`"
+      },
+      "boolean": {
+        "java": "Represents true or false values, e.g., `boolean isActive = true;`"
+      }
+    }
+  },
+  "control-flow": {
+    "description": "Directs the flow of execution in your code.",
+    "examples": {
+      "ifElse": {
+        "java": "Used to execute different code blocks based on a condition."
+      },
+      "switch": {
+        "java": "Used to select one of many code blocks to execute based on a variable's value."
+      },
+      "forLoop": {
+        "java": "Used to repeatedly execute a block of code a certain number of times."
+      },
+      "whileLoop": {
+        "java": "Used to repeatedly execute a block of code as long as a condition is true."
+      }
+    }
+  },
+  "methods": {
+    "description": "Reusable blocks of code.",
+    "examples": {
+      "methodDefinition": {
+        "java": "Defines a block of code that performs a specific task and can be reused."
+      },
+      "methodCall": {
+        "java": "Invokes a method to perform the task defined in the method."
+      }
+    }
+  },
+  "classes": {
+    "description": "Defines objects with shared properties and methods.",
+    "examples": {
+      "basicClass": {
+        "java": "Defines a blueprint for creating objects with specific attributes and behaviors."
+      },
+      "creatingInstance": {
+        "java": "Creates an object of a class and initializes it with specific values."
+      }
+    }
+  },
+  "inheritance": {
+    "description": "Allows one class to inherit fields and methods from another.",
+    "examples": {
+      "basicInheritance": {
+        "java": "A mechanism by which a new class derives properties and behavior from an existing class."
+      }
+    }
+  },
+  "interfaces": {
+    "description": "Defines a contract that classes can implement.",
+    "examples": {
+      "basicInterface": {
+        "java": "Specifies methods that a class must implement without providing the method bodies."
+      }
+    }
+  },
+  "exceptions": {
+    "description": "Handles errors and exceptions.",
+    "examples": {
+      "tryCatch": {
+        "java": "Used to handle errors gracefully by catching exceptions that occur during execution."
+      },
+      "throwException": {
+        "java": "Used to explicitly throw an exception when a certain condition is met."
+      }
+    }
+  },
+  "collections": {
+    "description": "Handles groups of objects.",
+    "examples": {
+      "arrayList": {
+        "java": "A resizable array implementation that can store and manipulate a list of objects."
+      },
+      "hashMap": {
+        "java": "A collection that maps keys to values, allowing efficient data retrieval."
+      }
+    }
+  },
+  "streams": {
+    "description": "Processes sequences of elements.",
+    "examples": {
+      "basicStream": {
+        "java": "Provides a functional approach to process sequences of data, such as filtering and mapping."
+      }
+    }
+  },
+  "file-io": {
+    "description": "Handles reading and writing files.",
+    "examples": {
+      "readingFile": {
+        "java": "Reads the content of a file and processes it, handling potential input/output errors."
+      },
+      "writingFile": {
+        "java": "Writes data to a file, creating or overwriting the file as needed."
+      }
+    }
+  },
+  "multithreading": {
+    "description": "Handles concurrent execution of threads.",
+    "examples": {
+      "basicThread": {
+        "java": "A thread that performs tasks concurrently with other threads, improving performance."
+      },
+      "runnable": {
+        "java": "An interface that represents a task that can be executed concurrently by a thread."
+      }
+    }
+  },
+  "annotations": {
+    "description": "Provides metadata about code.",
+    "examples": {
+      "override": {
+        "java": "Indicates that a method overrides a method declared in a superclass."
+      },
+      "deprecated": {
+        "java": "Marks a method or class as deprecated, indicating it should not be used."
+      }
+    }
+  },
+  "lambdas": {
+    "description": "Provides a concise way to represent anonymous functions.",
+    "examples": {
+      "basicLambda": {
+        "java": "A short way to express instances of single-method interfaces (functional interfaces)."
+      }
+    }
+  }
+}

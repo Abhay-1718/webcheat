@@ -1,0 +1,113 @@
+{
+    "components": {
+      "description": "The basic building blocks of a React application.",
+      "examples": {
+        "FunctionalComponent": "const MyComponent = () => { return <div>Hello World</div>; };",
+        "ClassComponent": "class MyComponent extends React.Component { render() { return <div>Hello World</div>; } }"
+      }
+    },
+    "state": {
+      "description": "Manages the state of a component.",
+      "hooks": {
+        "useState": "const [state, setState] = useState(initialState);"
+      },
+      "classComponent": {
+        "state": "this.state = { key: value };",
+        "setState": "this.setState({ key: newValue });"
+      }
+    },
+    "props": {
+      "description": "Passes data from parent to child components.",
+      "examples": {
+        "function": "const MyComponent = (props) => { return <div>{props.value}</div>; };",
+        "class": "class MyComponent extends React.Component { render() { return <div>{this.props.value}</div>; } }"
+      }
+    },
+    "useEffect": {
+      "description": "Performs side effects in function components.",
+      "examples": {
+        "basic": "useEffect(() => { // code here }, [dependencies]);",
+        "cleanup": "useEffect(() => { return () => { // cleanup code here }; }, [dependencies]);"
+      }
+    },
+    "useContext": {
+      "description": "Accesses context values in function components.",
+      "examples": {
+        "createContext": "const MyContext = React.createContext(defaultValue);",
+        "useContext": "const contextValue = useContext(MyContext);"
+      }
+    },
+    "useReducer": {
+      "description": "Manages complex state logic in function components.",
+      "examples": {
+        "basic": "const [state, dispatch] = useReducer(reducer, initialState);",
+        "reducer": "const reducer = (state, action) => { switch (action.type) { case 'ACTION_TYPE': return newState; default: return state; } };"
+      }
+    },
+    "useMemo": {
+      "description": "Memoizes expensive calculations.",
+      "examples": {
+        "basic": "const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);"
+      }
+    },
+    "useCallback": {
+      "description": "Memoizes callback functions.",
+      "examples": {
+        "basic": "const memoizedCallback = useCallback(() => { // callback code }, [dependencies]);"
+      }
+    },
+    "useRef": {
+      "description": "Accesses and modifies DOM elements directly.",
+      "examples": {
+        "basic": "const myRef = useRef(null);",
+        "assignRef": "<div ref={myRef}></div>"
+      }
+    },
+    "context": {
+      "description": "Provides a way to pass data through the component tree without props drilling.",
+      "examples": {
+        "createContext": "const MyContext = React.createContext(defaultValue);",
+        "provider": "<MyContext.Provider value={contextValue}><MyComponent /></MyContext.Provider>",
+        "consumer": "<MyContext.Consumer>{value => <div>{value}</div>}</MyContext.Consumer>"
+      }
+    },
+    "routing": {
+      "description": "Handles routing in a React application.",
+      "libraries": {
+        "react-router-dom": {
+          "description": "Popular routing library for React.",
+          "examples": {
+            "router": "<BrowserRouter><Routes><Route path='/' element={<Home />} /></Routes></BrowserRouter>",
+            "link": "<Link to='/about'>About</Link>"
+          }
+        }
+      }
+    },
+    "event-handling": {
+      "description": "Handles user interactions and events.",
+      "examples": {
+        "onClick": "<button onClick={() => { // handle click }}>Click Me</button>",
+        "onChange": "<input type='text' onChange={e => { // handle change }} />"
+      }
+    },
+    "conditional-rendering": {
+      "description": "Renders elements based on conditions.",
+      "examples": {
+        "ternary": "{ condition ? <ComponentA /> : <ComponentB /> }",
+        "logical-and": "{ condition && <Component /> }"
+      }
+    },
+    "error-boundaries": {
+      "description": "Catches JavaScript errors anywhere in a component tree.",
+      "examples": {
+        "basic": "class ErrorBoundary extends React.Component { constructor(props) { super(props); this.state = { hasError: false }; } static getDerivedStateFromError() { return { hasError: true }; } componentDidCatch(error, info) { // log error } render() { if (this.state.hasError) { return <h1>Something went wrong.</h1>; } return this.props.children; } }"
+      }
+    },
+    "fragment": {
+      "description": "Groups multiple elements without adding extra nodes to the DOM.",
+      "examples": {
+        "basic": "<><div>First</div><div>Second</div></>"
+      }
+    }
+  }
+  

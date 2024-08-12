@@ -1,0 +1,153 @@
+{
+    "variables": {
+      "description": "Used to store data.",
+      "examples": {
+        "basicVariable": {
+          "python": "x = 10"
+        },
+        "string": {
+          "python": "name = 'John'"
+        },
+        "float": {
+          "python": "pi = 3.14"
+        },
+        "boolean": {
+          "python": "is_active = True"
+        }
+      }
+    },
+    "data-types": {
+      "description": "Different types of data that Python can handle.",
+      "examples": {
+        "integer": {
+          "python": "age = 25"
+        },
+        "float": {
+          "python": "height = 1.75"
+        },
+        "string": {
+          "python": "greeting = 'Hello'"
+        },
+        "list": {
+          "python": "numbers = [1, 2, 3, 4]"
+        },
+        "tuple": {
+          "python": "person = ('John', 25)"
+        },
+        "dictionary": {
+          "python": "person = {'name': 'John', 'age': 25}"
+        },
+        "set": {
+          "python": "unique_numbers = {1, 2, 3, 4}"
+        }
+      }
+    },
+    "functions": {
+      "description": "Reusable blocks of code.",
+      "examples": {
+        "functionDefinition": {
+          "python": "def add(a, b):\n    return a + b"
+        },
+        "functionCall": {
+          "python": "result = add(5, 3)"
+        },
+        "lambdaFunction": {
+          "python": "square = lambda x: x ** 2\nresult = square(4)"
+        }
+      }
+    },
+    "control-flow": {
+      "description": "Directs the flow of execution in your code.",
+      "examples": {
+        "ifElse": {
+          "python": "if x > 10:\n    print('x is greater than 10')\nelse:\n    print('x is 10 or less')"
+        },
+        "forLoop": {
+          "python": "for i in range(5):\n    print(i)"
+        },
+        "whileLoop": {
+          "python": "i = 0\nwhile i < 5:\n    print(i)\n    i += 1"
+        },
+        "tryExcept": {
+          "python": "try:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print('Cannot divide by zero')"
+        }
+      }
+    },
+    "classes": {
+      "description": "Defines objects with shared properties and methods.",
+      "examples": {
+        "basicClass": {
+          "python": "class Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    def greet(self):\n        return f'Hello, my name is {self.name}'\n\nperson = Person('John', 30)\nprint(person.greet())"
+        },
+        "inheritance": {
+          "python": "class Employee(Person):\n    def __init__(self, name, age, salary):\n        super().__init__(name, age)\n        self.salary = salary\n    def get_details(self):\n        return f'{self.greet()}, and I earn ${self.salary}'\n\nemployee = Employee('John', 30, 50000)\nprint(employee.get_details())"
+        }
+      }
+    },
+    "modules": {
+      "description": "Organizes code into separate files.",
+      "examples": {
+        "importModule": {
+          "python": "import math\nresult = math.sqrt(16)"
+        },
+        "fromImport": {
+          "python": "from math import sqrt\nresult = sqrt(16)"
+        }
+      }
+    },
+    "exception-handling": {
+      "description": "Handles errors in your code.",
+      "examples": {
+        "tryExcept": {
+          "python": "try:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print('Cannot divide by zero')"
+        }
+      }
+    },
+    "list-comprehensions": {
+      "description": "Provides a concise way to create lists.",
+      "examples": {
+        "basicListComprehension": {
+          "python": "[x ** 2 for x in range(5)]"
+        },
+        "conditionalListComprehension": {
+          "python": "[x for x in range(10) if x % 2 == 0]"
+        }
+      }
+    },
+    "file-io": {
+      "description": "Handles reading and writing files.",
+      "examples": {
+        "readingFile": {
+          "python": "with open('file.txt', 'r') as file:\n    content = file.read()\n    print(content)"
+        },
+        "writingFile": {
+          "python": "with open('file.txt', 'w') as file:\n    file.write('Hello, World!')"
+        }
+      }
+    },
+    "decorators": {
+      "description": "Modifies the behavior of functions or methods.",
+      "examples": {
+        "basicDecorator": {
+          "python": "def my_decorator(func):\n    def wrapper():\n        print('Something is happening before the function is called.')\n        func()\n        print('Something is happening after the function is called.')\n    return wrapper\n\n@my_decorator\ndef say_hello():\n    print('Hello!')\n\nsay_hello()"
+        }
+      }
+    },
+    "generators": {
+      "description": "Functions that return an iterator using `yield`.",
+      "examples": {
+        "basicGenerator": {
+          "python": "def count_up_to(max):\n    count = 1\n    while count <= max:\n        yield count\n        count += 1\n\nfor number in count_up_to(5):\n    print(number)"
+        }
+      }
+    },
+    "context-managers": {
+      "description": "Simplifies resource management using the `with` statement.",
+      "examples": {
+        "basicContextManager": {
+          "python": "with open('file.txt', 'r') as file:\n    content = file.read()\n    print(content)"
+        }
+      }
+    }
+  }
+  

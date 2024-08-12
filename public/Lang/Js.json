@@ -1,0 +1,150 @@
+{
+  "variables": {
+    "description": "Used to store data.",
+    "examples": {
+      "let": {
+        "javascript": "A keyword for declaring block-scoped variables that can be reassigned. Unlike `var`, it has block scope."
+      },
+      "const": {
+        "javascript": "A keyword for declaring block-scoped variables that cannot be reassigned after initialization. Useful for constants."
+      },
+      "var": {
+        "javascript": "A keyword for declaring variables with function scope or global scope. It can be reassigned and is hoisted."
+      }
+    }
+  },
+  "data-types": {
+    "description": "Different types of data that JavaScript can handle.",
+    "examples": {
+      "string": {
+        "javascript": "Represents text data. Can be enclosed in single or double quotes."
+      },
+      "number": {
+        "javascript": "Represents numerical values, both integer and floating-point."
+      },
+      "boolean": {
+        "javascript": "Represents true or false values, often used in conditional statements."
+      },
+      "array": {
+        "javascript": "An ordered list of values, which can be of any type. Arrays are zero-indexed."
+      },
+      "object": {
+        "javascript": "A collection of key-value pairs, where keys are strings and values can be of any type."
+      },
+      "null": {
+        "javascript": "Represents a deliberate non-value. It is a special value that represents 'no value'."
+      },
+      "undefined": {
+        "javascript": "Represents a variable that has been declared but not assigned a value. It is the default value of uninitialized variables."
+      }
+    }
+  },
+  "functions": {
+    "description": "Reusable blocks of code.",
+    "examples": {
+      "functionDeclaration": {
+        "javascript": "A way to define a named function. Functions can be called by their name from anywhere in their scope."
+      },
+      "functionExpression": {
+        "javascript": "A way to define a function and assign it to a variable. This function can be called using that variable."
+      },
+      "arrowFunction": {
+        "javascript": "A concise way to write function expressions using the arrow syntax. It is often used for short, single-expression functions."
+      }
+    }
+  },
+  "control-flow": {
+    "description": "Directs the flow of execution in your code.",
+    "examples": {
+      "ifElse": {
+        "javascript": "A control structure that executes code based on a condition. It can branch into multiple paths based on the condition."
+      },
+      "switch": {
+        "javascript": "A control structure that allows for multiple possible execution paths based on the value of a variable."
+      },
+      "forLoop": {
+        "javascript": "A loop that iterates a specific number of times, commonly used when the number of iterations is known beforehand."
+      },
+      "whileLoop": {
+        "javascript": "A loop that continues to execute as long as a condition is true. Useful when the number of iterations is not known."
+      }
+    }
+  },
+  "objects": {
+    "description": "Collections of properties and methods.",
+    "examples": {
+      "objectLiteral": {
+        "javascript": "A way to define an object with properties and methods using curly braces. Properties are defined as key-value pairs."
+      },
+      "destructuring": {
+        "javascript": "A syntax for extracting values from objects and arrays into distinct variables."
+      }
+    }
+  },
+  "arrays": {
+    "description": "Ordered collections of items.",
+    "examples": {
+      "arrayMethods": {
+        "javascript": "Various methods available for manipulating arrays, such as adding, removing, and accessing elements."
+      },
+      "map": {
+        "javascript": "A method that creates a new array with the results of applying a function to each element of the original array."
+      },
+      "filter": {
+        "javascript": "A method that creates a new array with all elements that pass a test implemented by a provided function."
+      },
+      "reduce": {
+        "javascript": "A method that applies a function against an accumulator and each element of the array to reduce it to a single value."
+      }
+    }
+  },
+  "events": {
+    "description": "Handle user interactions and other events.",
+    "examples": {
+      "eventListener": {
+        "javascript": "A method to attach a function to an event on a specific element, such as a button click or a form submission."
+      },
+      "eventObject": {
+        "javascript": "An object that contains information about an event that has occurred, such as user input or system-generated events."
+      }
+    }
+  },
+  "asynchronous": {
+    "description": "Handles operations that take time to complete.",
+    "examples": {
+      "callbacks": {
+        "javascript": "Functions passed as arguments to other functions, to be executed after a certain task is completed."
+      },
+      "promises": {
+        "javascript": "A mechanism for handling asynchronous operations that represents the eventual completion (or failure) of an operation."
+      },
+      "asyncAwait": {
+        "javascript": "Syntax for writing asynchronous code in a way that looks synchronous. `async` functions return a promise, and `await` pauses execution until the promise is resolved."
+      }
+    }
+  },
+  "error-handling": {
+    "description": "Handles errors in your code.",
+    "examples": {
+      "tryCatch": {
+        "javascript": "A construct to handle exceptions. Code that might throw an error is placed inside `try`, and error handling code is placed inside `catch`."
+      }
+    }
+  },
+  "classes": {
+    "description": "Creates objects with shared properties and methods.",
+    "examples": {
+      "basicClass": {
+        "javascript": "A blueprint for creating objects with predefined properties and methods. Allows for object-oriented programming."
+      }
+    }
+  },
+  "modules": {
+    "description": "Organizes code into reusable units.",
+    "examples": {
+      "exportImport": {
+        "javascript": "A way to modularize code by exporting functions or variables from one file and importing them into another."
+      }
+    }
+  }
+}

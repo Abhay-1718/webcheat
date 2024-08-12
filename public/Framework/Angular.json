@@ -1,0 +1,101 @@
+{
+  "components": {
+    "description": "Basic blocks of an Angular app.",
+    "examples": {
+      "basicComponent": {
+        "ts": "import { Component } from '@angular/core'; @Component({ selector: 'app-my-component', template: '<div>Hello</div>', styles: ['div { color: blue; }'] }) export class MyComponent { }"
+      }
+    }
+  },
+  "modules": {
+    "description": "Collection of app features.",
+    "examples": {
+      "basicModule": "import { NgModule } from '@angular/core'; import { BrowserModule } from '@angular/platform-browser'; import { AppComponent } from './app.component'; @NgModule({ declarations: [AppComponent], imports: [BrowserModule], bootstrap: [AppComponent] }) export class AppModule { }"
+    }
+  },
+  "services": {
+    "description": "Provides shared functionality.",
+    "examples": {
+      "basicService": {
+        "ts": "import { Injectable } from '@angular/core'; @Injectable({ providedIn: 'root' }) export class MyService { getData() { return ['data1', 'data2']; } }"
+      }
+    }
+  },
+  "dependency-injection": {
+    "description": "Injects services into components.",
+    "examples": {
+      "constructorInjection": "constructor(private myService: MyService) { }"
+    }
+  },
+  "directives": {
+    "description": "Modifies elements' behavior or appearance.",
+    "examples": {
+      "ngIf": "<div *ngIf=\"cond\">Content</div>",
+      "ngFor": "<div *ngFor=\"let item of items\">{{ item }}</div>",
+      "ngClass": "<div [ngClass]=\"{'class-name': cond}\">Content</div>",
+      "ngStyle": "<div [ngStyle]=\"{ 'color': color }\">Content</div>"
+    }
+  },
+  "pipes": {
+    "description": "Transforms data in templates.",
+    "examples": {
+      "datePipe": "<div>{{ today | date:'short' }}</div>",
+      "currencyPipe": "<div>{{ amount | currency }}</div>"
+    }
+  },
+  "routing": {
+    "description": "Manages navigation between views.",
+    "examples": {
+      "routes": "const routes = [{ path: 'home', component: HomeComponent }, { path: 'about', component: AboutComponent }, { path: '**', redirectTo: 'home' }];",
+      "routerModule": "import { RouterModule } from '@angular/router'; @NgModule({ imports: [RouterModule.forRoot(routes)], exports: [RouterModule] }) export class AppRoutingModule { }"
+    }
+  },
+  "forms": {
+    "description": "Handles user input and validation.",
+    "examples": {
+      "templateDriven": {
+        "html": "<form #myForm=\"ngForm\" (ngSubmit)=\"onSubmit(myForm)\"><input name=\"name\" ngModel><button type=\"submit\">Submit</button></form>",
+        "ts": "onSubmit(form: NgForm) { console.log(form.value); }"
+      },
+      "reactiveForms": {
+        "ts": "import { FormBuilder, FormGroup } from '@angular/forms'; constructor(private fb: FormBuilder) { this.form = this.fb.group({ name: [''] }); }",
+        "html": "<form [formGroup]=\"form\" (ngSubmit)=\"onSubmit()\"><input formControlName=\"name\"><button type=\"submit\">Submit</button></form>",
+        "onSubmit": "onSubmit() { console.log(this.form.value); }"
+      }
+    }
+  },
+  "lifecycle-hooks": {
+    "description": "Methods at specific points in component lifecycle.",
+    "examples": {
+      "ngOnInit": "ngOnInit() { }",
+      "ngOnDestroy": "ngOnDestroy() { }",
+      "ngOnChanges": "ngOnChanges(changes: SimpleChanges) { }"
+    }
+  },
+  "change-detection": {
+    "description": "Manages DOM updates.",
+    "examples": {
+      "default": "ChangeDetectionStrategy.Default",
+      "onPush": "ChangeDetectionStrategy.OnPush"
+    }
+  },
+  "animations": {
+    "description": "Creates animations.",
+    "examples": {
+      "basic": "import { trigger, transition, style, animate } from '@angular/animations'; @Component({ animations: [ trigger('fade', [ transition(':enter', [ style({ opacity: 0 }), animate(500, style({ opacity: 1 })) ]), transition(':leave', [ animate(500, style({ opacity: 0 })) ]) ]) ] })"
+    }
+  },
+  "http-client": {
+    "description": "Handles HTTP requests.",
+    "examples": {
+      "basicRequest": "import { HttpClient } from '@angular/common/http'; constructor(private http: HttpClient) { this.http.get('url').subscribe(res => console.log(res)); }"
+    }
+  },
+  "rxjs": {
+    "description": "Reactive programming with Observables.",
+    "examples": {
+      "observable": "import { Observable } from 'rxjs'; const obs = new Observable(sub => { sub.next('data'); sub.complete(); });",
+      "subscribe": "obs.subscribe(data => console.log(data));"
+    }
+  }
+}

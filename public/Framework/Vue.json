@@ -1,0 +1,95 @@
+{
+  "components": {
+    "description": "The basic building blocks of a Vue.js application.",
+    "examples": {
+      "basicComponent": "A Vue component is a reusable piece of UI. It typically consists of a template, a script, and optional styles."
+    }
+  },
+  "data": {
+    "description": "Manages the state of a component.",
+    "examples": {
+      "dataFunction": "The `data` function in a Vue component returns an object that contains the component’s reactive state."
+    }
+  },
+  "props": {
+    "description": "Passes data from parent to child components.",
+    "examples": {
+      "basicProp": "Props are custom attributes used to pass data from parent to child components. They make components more reusable and dynamic."
+    }
+  },
+  "computed": {
+    "description": "Defines computed properties that are cached based on their dependencies.",
+    "examples": {
+      "basicComputed": "Computed properties are reactive and update automatically when their dependencies change. They are useful for derived data."
+    }
+  },
+  "methods": {
+    "description": "Defines methods that can be used in the component.",
+    "examples": {
+      "basicMethod": "Methods are functions defined in a Vue component that can be used for event handling or other logic."
+    }
+  },
+  "watch": {
+    "description": "Watches data changes and performs actions.",
+    "examples": {
+      "basicWatch": "The `watch` property allows you to observe changes to data or computed properties and execute code in response."
+    }
+  },
+  "directives": {
+    "description": "Special tokens in the markup that tell the library to do something with the DOM.",
+    "examples": {
+      "v-if": "The `v-if` directive conditionally renders elements based on a boolean expression.",
+      "v-for": "The `v-for` directive is used to render a list of items by iterating over an array or object.",
+      "v-bind": "The `v-bind` directive dynamically binds attributes or props to an element.",
+      "v-model": "The `v-model` directive creates a two-way binding on form input elements."
+    }
+  },
+  "filters": {
+    "description": "Formats data before displaying it.",
+    "examples": {
+      "basicFilter": "Filters are functions that can be used to format or transform data in templates."
+    }
+  },
+  "mixins": {
+    "description": "Reusable chunks of functionality that can be shared across components.",
+    "examples": {
+      "basicMixin": "Mixins allow you to define reusable pieces of logic that can be shared across multiple components.",
+      "usingMixin": "To use a mixin, import it into your component and include it in the `mixins` array."
+    }
+  },
+  "plugins": {
+    "description": "Extend Vue.js functionality by adding global features.",
+    "examples": {
+      "basicPlugin": "Plugins add global-level functionality to Vue.js, such as global components or methods.",
+      "usingPlugin": "To use a plugin, import it and use `Vue.use()` to install it."
+    }
+  },
+  "routing": {
+    "description": "Manages navigation between views using Vue Router.",
+    "examples": {
+      "basicSetup": "Vue Router is used to manage navigation between different views or pages in a Vue application.",
+      "router-view": "The `router-view` component is used to render the component for the active route."
+    }
+  },
+  "state-management": {
+    "description": "Manages state across components using Vuex.",
+    "examples": {
+      "store": "Vuex is a state management pattern and library for Vue.js applications, used to manage shared state.",
+      "usingStore": "Components can access the Vuex store to get or update state through getters, actions, and mutations."
+    }
+  },
+  "lifecycle-hooks": {
+    "description": "Methods called at specific points in a component’s lifecycle.",
+    "examples": {
+      "created": "The `created` hook is called after the component instance has been created.",
+      "mounted": "The `mounted` hook is called after the component has been mounted to the DOM.",
+      "destroyed": "The `destroyed` hook is called before the component is destroyed."
+    }
+  },
+  "transitions": {
+    "description": "Apply transition effects when elements enter or leave the DOM.",
+    "examples": {
+      "basicTransition": "Vue provides transition hooks that can be used to apply transition effects when elements enter or leave the DOM."
+    }
+  }
+}
