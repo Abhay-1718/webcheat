@@ -100,19 +100,7 @@ const Auth = () => {
               />
             </div>
             <div>
-              <div className="flex justify-between mb-2">
-                <label htmlFor="password" className="text-sm font-medium">Password</label>
-                <a
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    // Handle forgot password functionality here
-                  }}
-                  className="text-xs hover:underline dark:text-gray-400"
-                >
-                  Forgot password?
-                </a>
-              </div>
+          
               <input
                 type="password"
                 name="password"
