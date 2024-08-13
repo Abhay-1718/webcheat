@@ -33,7 +33,7 @@ const Angular = () => {
                 {data[key].examples && (
                   <div>
                     <h3 className="font-medium text-teal-400 mb-2">Examples:</h3>
-                    <ul className="list-disc pl-5 text-gray-300 space-y-2">
+                    <ul className="list-disc  text-gray-300 space-y-2">
                       {Object.keys(data[key].examples).map((exampleKey) => (
                         <li key={exampleKey} className="flex flex-col space-y-1">
                           <strong className="text-gray-200">{exampleKey}:</strong> 
