@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { auth, googleProvider } from '../../firebase';
 import { useNavigate } from 'react-router-dom';
+import Logo from '../../assets/logo.png'
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -77,8 +78,10 @@ const Auth = () => {
 
   return (
     <main className="flex items-center justify-center h-screen bg-gray-100 p-4 dark:bg-gray-900">
+   
       <ToastContainer />
       <div className="flex flex-col max-w-md p-6 rounded-md sm:p-10 bg-white text-gray-900 shadow-md dark:bg-gray-800 dark:text-gray-100">
+      <img src={Logo} alt="" className="h-8 w-full m-2"  />
         <div className="mb-8 text-center">
           <h1 className="my-3 text-4xl font-bold">{isRegistering ? "Sign up" : "Sign in"}</h1>
           <p className="text-sm dark:text-gray-400">
