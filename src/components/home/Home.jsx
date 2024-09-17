@@ -1,7 +1,7 @@
 import { FaHtml5, FaCss3Alt, FaBootstrap, FaJava, FaPython, FaPhp, FaRust, FaReact, FaAngular, FaVuejs } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiTypescript, SiKotlin, SiFlask, SiSpringboot } from "react-icons/si";
+import { SiTypescript, SiKotlin, SiFlask, SiSpringboot, SiExpress } from "react-icons/si";
 import { DiDjango, DiGo } from "react-icons/di";
 import { useNavigate } from "react-router-dom";
 
@@ -162,6 +162,13 @@ function Home() {
           >
             <DiDjango className="w-8 h-8 text-green-500" />
             Django
+          </button>
+          <button
+            onClick={() => handleButtonClick('/express')}
+            className="flex items-center gap-3 rounded-lg border border-teal-500 bg-gray-900 text-white px-4 py-3 text-md font-medium hover:bg-teal-500 hover:text-gray-100 transition-transform duration-300 transform hover:scale-105 shadow-xl"
+          >
+            <SiExpress className="w-8 h-8 text-green-500" />
+            Express
           </button>
         </div>
       </div>

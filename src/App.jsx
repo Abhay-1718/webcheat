@@ -3,8 +3,10 @@ import AuthRoute from './AuthRoute';
 import Auth from './components/login/Auth'; 
 import WebFront from './WebFront'; 
 import { Html, Css, Tailwind, Bootstrap } from './webcomp/Basic-Web/index'
-import {React, Angular, Flask, Vue, SpringBoot, Django} from './webcomp/Frameworks/index'
+import {React, Angular, Flask, Vue, SpringBoot, Django, Express } from './webcomp/Frameworks/index'
 import { Java, Ts, Js, Kotlin, Rust, Go , Php, Python } from './webcomp/Lang/index';
+
+
 function App() {
   return (
     <Router>
@@ -28,6 +30,9 @@ function App() {
         <Route path="/SpringBoot" element={<SpringBoot />} />
         <Route path="/Vue" element={<Vue />} />
         <Route path="/Django" element={<Django />} />
+        <Route path="/Express" element={<Express />} />
+      
+       
         
         {/* routes for the lang */}
         <Route path='/Java' element={<Java />} />

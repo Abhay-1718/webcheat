@@ -1,0 +1,94 @@
+{
+    "app": {
+      "description": "The core application object.",
+      "examples": {
+        "basicApp": {
+          "javascript": "Sets up the core Express application object. This initializes the app and listens for incoming requests, allowing you to start a server."
+        }
+      }
+    },
+    "routes": {
+      "description": "Maps URLs to functions.",
+      "examples": {
+        "basicRoute": {
+          "javascript": "Defines a route that associates a URL with a function. This is how you create endpoints in your application that handle specific HTTP requests."
+        },
+        "routeWithVariable": {
+          "javascript": "Creates a route with dynamic URL segments that capture variables from the URL. Useful for creating endpoints that process dynamic parameters."
+        }
+      }
+    },
+    "request": {
+      "description": "Handles incoming request data.",
+      "examples": {
+        "getData": {
+          "javascript": "Shows how to handle form data from a POST request. This is useful for processing user input from forms or API requests."
+        }
+      }
+    },
+    "response": {
+      "description": "Handles sending responses to the client.",
+      "examples": {
+        "basicResponse": {
+          "javascript": "Illustrates how to return a custom HTTP response with a status code. This is essential for sending different types of responses to the client."
+        }
+      }
+    },
+    "middleware": {
+      "description": "Functions that execute during the request-response cycle.",
+      "examples": {
+        "basicMiddleware": {
+          "javascript": "Shows how to use middleware functions to perform tasks such as logging, authentication, or modifying request and response objects."
+        }
+      }
+    },
+    "static-files": {
+      "description": "Handles static files like CSS, JavaScript, and images.",
+      "examples": {
+        "basicUsage": {
+          "javascript": "Demonstrates how to serve static files, such as stylesheets and scripts, using Express's built-in middleware."
+        }
+      }
+    },
+    "templates": {
+      "description": "Renders HTML templates.",
+      "examples": {
+        "basicTemplate": {
+          "javascript": "Shows how to use a templating engine like EJS or Pug to render HTML templates and pass data to them."
+        }
+      }
+    },
+    "forms": {
+      "description": "Handles form data using middleware like body-parser.",
+      "examples": {
+        "formSetup": {
+          "javascript": "Explains how to set up middleware to parse form data from POST requests. This is useful for processing user input from forms."
+        }
+      }
+    },
+    "database": {
+      "description": "Configures and interacts with databases.",
+      "examples": {
+        "basicSetup": {
+          "javascript": "Describes how to connect to a database and define models using an ORM like Sequelize. This is crucial for storing and retrieving data."
+        }
+      }
+    },
+    "error-handling": {
+      "description": "Handles error responses and custom error pages.",
+      "examples": {
+        "basicErrorHandling": {
+          "javascript": "Demonstrates how to handle errors and create custom error responses in Express. This helps in managing error scenarios effectively."
+        }
+      }
+    },
+    "logging": {
+      "description": "Logs application events and errors.",
+      "examples": {
+        "basicLogging": {
+          "javascript": "Shows how to set up basic logging in your Express application. Logging is important for monitoring and troubleshooting."
+        }
+      }
+    }
+  }
+  

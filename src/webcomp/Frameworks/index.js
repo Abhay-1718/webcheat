@@ -9,6 +9,9 @@ export{default as Vue}  from '../../webcomp/Frameworks/Vue'
 
 export{default as Flask}  from '../../webcomp/Frameworks/Flask'
 
+
 export{default as Django}  from '../../webcomp/Frameworks/Django'
+
+export {default as Express} from '../../webcomp/Frameworks/Express'
 
 
