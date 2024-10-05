@@ -14,4 +14,6 @@ export{default as Django}  from '../../webcomp/Frameworks/Django'
 
 export {default as Express} from '../../webcomp/Frameworks/Express'
 
+export {default as Rubyonrails} from '../Frameworks/Rubyonrails'
+
 

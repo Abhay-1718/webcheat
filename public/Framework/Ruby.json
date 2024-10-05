@@ -1,0 +1,87 @@
+{
+    "models": {
+      "description": "Represents the data and business logic of the application.",
+      "examples": {
+        "basic": "class User < ApplicationRecord; end",
+        "validations": "validates :name, presence: true",
+        "associations": "has_many :posts"
+      }
+    },
+    "controllers": {
+      "description": "Handles incoming requests and generates responses.",
+      "examples": {
+        "basic": "class UsersController < ApplicationController; def index; end; end",
+        "strong_parameters": "def user_params; params.require(:user).permit(:name, :email); end"
+      }
+    },
+    "routes": {
+      "description": "Maps URLs to controller actions.",
+      "examples": {
+        "basic": "get 'users', to: 'users#index'",
+        "resources": "resources :users"
+      }
+    },
+    "views": {
+      "description": "Templates that generate HTML for the browser.",
+      "examples": {
+        "erb": "<h1><%= @user.name %></h1>",
+        "layout": "<%= yield %>"
+      }
+    },
+    "migrations": {
+      "description": "Handles database schema changes.",
+      "examples": {
+        "create_table": "create_table :users do |t|; t.string :name; t.timestamps; end",
+        "add_column": "add_column :users, :email, :string"
+      }
+    },
+    "validations": {
+      "description": "Ensures data integrity by validating model attributes.",
+      "examples": {
+        "presence": "validates :name, presence: true",
+        "uniqueness": "validates :email, uniqueness: true"
+      }
+    },
+    "associations": {
+      "description": "Defines relationships between models.",
+      "examples": {
+        "belongs_to": "class Post < ApplicationRecord; belongs_to :user; end",
+        "has_many": "class User < ApplicationRecord; has_many :posts; end"
+      }
+    },
+    "helpers": {
+      "description": "Reusable code that can be used in views.",
+      "examples": {
+        "link_to": "<%= link_to 'Show', user_path(@user) %>",
+        "form_for": "<%= form_for @user do |f| %><%= f.label :name %><%= f.text_field :name %><% end %>"
+      }
+    },
+    "assets": {
+      "description": "Manages stylesheets, JavaScript, and images.",
+      "examples": {
+        "stylesheet": "<%= stylesheet_link_tag 'application', media: 'all' %>",
+        "javascript": "<%= javascript_pack_tag 'application' %>"
+      }
+    },
+    "mailers": {
+      "description": "Handles sending emails.",
+      "examples": {
+        "basic": "class UserMailer < ApplicationMailer; def welcome_email; end; end",
+        "send_mail": "UserMailer.welcome_email(@user).deliver_now"
+      }
+    },
+    "background_jobs": {
+      "description": "Handles long-running tasks outside of the web request cycle.",
+      "examples": {
+        "sidekiq": "class HardWorker; include Sidekiq::Worker; def perform(name); end; end"
+      }
+    },
+    "testing": {
+      "description": "Ensures code quality through tests.",
+      "examples": {
+        "RSpec": "describe User do; it 'is valid with valid attributes'; end",
+        "Capybara": "visit '/users'; fill_in 'Name', with: 'Test'; click_button 'Create User'"
+      }
+    }
+  }
+  

@@ -3,7 +3,7 @@ import AuthRoute from './AuthRoute';
 import Auth from './components/login/Auth'; 
 import WebFront from './WebFront'; 
 import { Html, Css, Tailwind, Bootstrap } from './webcomp/Basic-Web/index'
-import {React, Angular, Flask, Vue, SpringBoot, Django, Express } from './webcomp/Frameworks/index'
+import {React, Angular, Flask, Vue, SpringBoot, Django, Express, Rubyonrails } from './webcomp/Frameworks/index'
 import { Java, Ts, Js, Kotlin, Rust, Go , Php, Python } from './webcomp/Lang/index';
 
 
@@ -31,6 +31,7 @@ function App() {
         <Route path="/Vue" element={<Vue />} />
         <Route path="/Django" element={<Django />} />
         <Route path="/Express" element={<Express />} />
+        <Route path='/Rubyonrails' element={<Rubyonrails/>} />
       
        
         
