@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Navbar from '../../components/navbar/Navbar'; // Import Navbar if necessary
 import Footer from '../../components/footer/Footer'; // Import Footer if necessary
 
-const React = () => {
+const Ruby = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const React = () => {
       <Navbar />
       <div className="w-full bg-gradient-to-r from-purple-100 via-purple-200 to-purple-300 text-gray-800">
         <div className="p-6 max-w-4xl mx-auto">
-          <h1 className="text-3xl font-bold mb-6 text-teal-400">React Concepts</h1>
+          <h1 className="text-3xl font-bold mb-6 text-teal-400">Ruby On Rails Concepts</h1>
           <div className="space-y-6">
             {Object.keys(data).map((key) => (
               <div
@@ -33,7 +33,7 @@ const React = () => {
                 {data[key].examples && (
                   <div>
                     <h3 className="font-medium text-teal-400 mb-2">Examples:</h3>
-                    <ul className="list-disc  text-gray-300 space-y-2">
+                    <ul className="list-disc text-gray-300 space-y-2">
                       {Object.keys(data[key].examples).map((exampleKey) => (
                         <li key={exampleKey} className="flex flex-col space-y-1">
                           <strong className="text-gray-200">{exampleKey}:</strong> 
@@ -70,4 +70,4 @@ const React = () => {
   );
 };
 
-export default React;
+export default Ruby;

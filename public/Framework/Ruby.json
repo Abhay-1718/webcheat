@@ -63,13 +63,14 @@
         "javascript": "<%= javascript_pack_tag 'application' %>"
       }
     },
-    "mailers": {
-      "description": "Handles sending emails.",
-      "examples": {
-        "basic": "class UserMailer < ApplicationMailer; def welcome_email; end; end",
-        "send_mail": "UserMailer.welcome_email(@user).deliver_now"
-      }
-    },
+ "mailers": {
+  "description": "Sends emails.",
+  "examples": {
+    "basic": "class UserMailer < ApplicationMailer; def welcome; end; end",
+    "send_mail": "UserMailer.welcome(@user).deliver_now"
+  }
+}
+,
     "background_jobs": {
       "description": "Handles long-running tasks outside of the web request cycle.",
       "examples": {
